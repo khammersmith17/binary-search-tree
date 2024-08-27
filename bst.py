@@ -4,13 +4,6 @@ class Node:
         self.left = None
         self.value = value
 
-def insert(node, value):
-    if not node:
-        return Node(value)
-
-    if value < node.value:
-        node.left = insert(node.left, value)
-
 def in_order_traversal(node):
     if not node:
         return []
